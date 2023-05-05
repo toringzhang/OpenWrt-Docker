@@ -1,4 +1,6 @@
-wget --no-check-certificate -O "/usr/bin/ipv6-helper" https://openwrt.cc/scripts/ipv6-helper.sh
-chmod +x /usr/bin/ipv6-helper
+#!/bin/bash
 
-ipv6-helper install
+wget --no-check-certificate -O "./ipv6-helper.sh" https://openwrt.cc/scripts/ipv6-helper.sh
+chmod +x ./ipv6-helper.sh
+
+./ipv6-helper.sh install
